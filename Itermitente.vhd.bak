@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Itermitente is
+	port (clk : in std_logic;
+			SP1Itermitente : in std_logic;
+			SP2Itermitente : in std_logic;
+			SP1Out : out std_logic;
+			SP2Out : out std_logic);
+end Itermitente;
+
+architecture Behavioral of Itermitente is
+signal s_SP1 , s_SP2 : std_logic;
+begin
+	if(rising_edge(clk)) then
+		if(SP1Itermitente = '1') then
+			SP1Out <= '1';
+		elsif(SP2Itermitente = '1') then	
+			SP2Out <= '1';
+		else
+			SP1Out <= '0';
+			SP2Out <= '0';
+		end if;
+	else
+		SP1Out <= '0';
+		SP2Out <= '0';
+	end if;
+end Behavioral;	
+		

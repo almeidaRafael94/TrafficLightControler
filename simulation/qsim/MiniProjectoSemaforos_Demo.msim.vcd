@@ -1,0 +1,607 @@
+$comment
+	File created using the following command:
+		vcd file MiniProjectoSemaforos_Demo.msim.vcd -direction
+$end
+$date
+	Fri May 16 14:55:00 2014
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Semaforos_Demo_vlg_vec_tst $end
+$var reg 1 ! CLOCK_50 $end
+$var reg 4 " SW [3:0] $end
+$var wire 1 # LEDG [7] $end
+$var wire 1 $ LEDG [6] $end
+$var wire 1 % LEDG [5] $end
+$var wire 1 & LEDG [4] $end
+$var wire 1 ' LEDG [3] $end
+$var wire 1 ( LEDG [2] $end
+$var wire 1 ) LEDG [1] $end
+$var wire 1 * LEDG [0] $end
+$var wire 1 + LEDR [17] $end
+$var wire 1 , LEDR [16] $end
+$var wire 1 - LEDR [15] $end
+$var wire 1 . LEDR [14] $end
+$var wire 1 / LEDR [13] $end
+$var wire 1 0 LEDR [12] $end
+$var wire 1 1 LEDR [11] $end
+$var wire 1 2 LEDR [10] $end
+$var wire 1 3 LEDR [9] $end
+$var wire 1 4 LEDR [8] $end
+$var wire 1 5 LEDR [7] $end
+$var wire 1 6 LEDR [6] $end
+$var wire 1 7 LEDR [5] $end
+$var wire 1 8 LEDR [4] $end
+$var wire 1 9 LEDR [3] $end
+$var wire 1 : LEDR [2] $end
+$var wire 1 ; LEDR [1] $end
+$var wire 1 < LEDR [0] $end
+$var wire 1 = sampler $end
+$scope module i1 $end
+$var wire 1 > gnd $end
+$var wire 1 ? vcc $end
+$var wire 1 @ unknown $end
+$var tri1 1 A devclrn $end
+$var tri1 1 B devpor $end
+$var tri1 1 C devoe $end
+$var wire 1 D SW[3]~input_o $end
+$var wire 1 E SW[0]~input_o $end
+$var wire 1 F SW[1]~input_o $end
+$var wire 1 G SW[2]~input_o $end
+$var wire 1 H LEDR[0]~output_o $end
+$var wire 1 I LEDR[1]~output_o $end
+$var wire 1 J LEDR[2]~output_o $end
+$var wire 1 K LEDR[3]~output_o $end
+$var wire 1 L LEDR[4]~output_o $end
+$var wire 1 M LEDR[5]~output_o $end
+$var wire 1 N LEDR[6]~output_o $end
+$var wire 1 O LEDR[7]~output_o $end
+$var wire 1 P LEDR[8]~output_o $end
+$var wire 1 Q LEDR[9]~output_o $end
+$var wire 1 R LEDR[10]~output_o $end
+$var wire 1 S LEDR[11]~output_o $end
+$var wire 1 T LEDR[12]~output_o $end
+$var wire 1 U LEDR[13]~output_o $end
+$var wire 1 V LEDR[14]~output_o $end
+$var wire 1 W LEDR[15]~output_o $end
+$var wire 1 X LEDR[16]~output_o $end
+$var wire 1 Y LEDR[17]~output_o $end
+$var wire 1 Z LEDG[0]~output_o $end
+$var wire 1 [ LEDG[1]~output_o $end
+$var wire 1 \ LEDG[2]~output_o $end
+$var wire 1 ] LEDG[3]~output_o $end
+$var wire 1 ^ LEDG[4]~output_o $end
+$var wire 1 _ LEDG[5]~output_o $end
+$var wire 1 ` LEDG[6]~output_o $end
+$var wire 1 a LEDG[7]~output_o $end
+$var wire 1 b CLOCK_50~input_o $end
+$var wire 1 c CLOCK_50~inputclkctrl_outclk $end
+$var wire 1 d freq_Devider|Add0~0_combout $end
+$var wire 1 e freq_Devider|Add0~1 $end
+$var wire 1 f freq_Devider|Add0~2_combout $end
+$var wire 1 g freq_Devider|Add0~3 $end
+$var wire 1 h freq_Devider|Add0~4_combout $end
+$var wire 1 i freq_Devider|Add0~5 $end
+$var wire 1 j freq_Devider|Add0~6_combout $end
+$var wire 1 k freq_Devider|Add0~7 $end
+$var wire 1 l freq_Devider|Add0~8_combout $end
+$var wire 1 m freq_Devider|Add0~9 $end
+$var wire 1 n freq_Devider|Add0~10_combout $end
+$var wire 1 o freq_Devider|Equal0~5_combout $end
+$var wire 1 p freq_Devider|Add0~11 $end
+$var wire 1 q freq_Devider|Add0~12_combout $end
+$var wire 1 r freq_Devider|Add0~13 $end
+$var wire 1 s freq_Devider|Add0~14_combout $end
+$var wire 1 t freq_Devider|s_counter~7_combout $end
+$var wire 1 u freq_Devider|Add0~15 $end
+$var wire 1 v freq_Devider|Add0~16_combout $end
+$var wire 1 w freq_Devider|Add0~17 $end
+$var wire 1 x freq_Devider|Add0~18_combout $end
+$var wire 1 y freq_Devider|Add0~19 $end
+$var wire 1 z freq_Devider|Add0~20_combout $end
+$var wire 1 { freq_Devider|Add0~21 $end
+$var wire 1 | freq_Devider|Add0~22_combout $end
+$var wire 1 } freq_Devider|Add0~23 $end
+$var wire 1 ~ freq_Devider|Add0~24_combout $end
+$var wire 1 !! freq_Devider|s_counter~6_combout $end
+$var wire 1 "! freq_Devider|Add0~25 $end
+$var wire 1 #! freq_Devider|Add0~26_combout $end
+$var wire 1 $! freq_Devider|s_counter~5_combout $end
+$var wire 1 %! freq_Devider|Add0~27 $end
+$var wire 1 &! freq_Devider|Add0~28_combout $end
+$var wire 1 '! freq_Devider|s_counter~4_combout $end
+$var wire 1 (! freq_Devider|Add0~29 $end
+$var wire 1 )! freq_Devider|Add0~30_combout $end
+$var wire 1 *! freq_Devider|s_counter~11_combout $end
+$var wire 1 +! freq_Devider|Add0~31 $end
+$var wire 1 ,! freq_Devider|Add0~32_combout $end
+$var wire 1 -! freq_Devider|Add0~33 $end
+$var wire 1 .! freq_Devider|Add0~34_combout $end
+$var wire 1 /! freq_Devider|s_counter~10_combout $end
+$var wire 1 0! freq_Devider|Equal0~8_combout $end
+$var wire 1 1! freq_Devider|Add0~35 $end
+$var wire 1 2! freq_Devider|Add0~36_combout $end
+$var wire 1 3! freq_Devider|Add0~37 $end
+$var wire 1 4! freq_Devider|Add0~38_combout $end
+$var wire 1 5! freq_Devider|s_counter~3_combout $end
+$var wire 1 6! freq_Devider|Add0~39 $end
+$var wire 1 7! freq_Devider|Add0~40_combout $end
+$var wire 1 8! freq_Devider|s_counter~2_combout $end
+$var wire 1 9! freq_Devider|Add0~41 $end
+$var wire 1 :! freq_Devider|Add0~42_combout $end
+$var wire 1 ;! freq_Devider|s_counter~1_combout $end
+$var wire 1 <! freq_Devider|Add0~43 $end
+$var wire 1 =! freq_Devider|Add0~45 $end
+$var wire 1 >! freq_Devider|Add0~46_combout $end
+$var wire 1 ?! freq_Devider|s_counter~9_combout $end
+$var wire 1 @! freq_Devider|Add0~47 $end
+$var wire 1 A! freq_Devider|Add0~48_combout $end
+$var wire 1 B! freq_Devider|Add0~49 $end
+$var wire 1 C! freq_Devider|Add0~50_combout $end
+$var wire 1 D! freq_Devider|s_counter~8_combout $end
+$var wire 1 E! freq_Devider|Equal0~7_combout $end
+$var wire 1 F! freq_Devider|Equal0~9_combout $end
+$var wire 1 G! freq_Devider|Add0~44_combout $end
+$var wire 1 H! freq_Devider|s_counter~0_combout $end
+$var wire 1 I! freq_Devider|Add0~51 $end
+$var wire 1 J! freq_Devider|Add0~52_combout $end
+$var wire 1 K! freq_Devider|Equal0~1_combout $end
+$var wire 1 L! freq_Devider|Add0~53 $end
+$var wire 1 M! freq_Devider|Add0~54_combout $end
+$var wire 1 N! freq_Devider|Add0~55 $end
+$var wire 1 O! freq_Devider|Add0~56_combout $end
+$var wire 1 P! freq_Devider|Add0~57 $end
+$var wire 1 Q! freq_Devider|Add0~58_combout $end
+$var wire 1 R! freq_Devider|Add0~59 $end
+$var wire 1 S! freq_Devider|Add0~60_combout $end
+$var wire 1 T! freq_Devider|Equal0~0_combout $end
+$var wire 1 U! freq_Devider|Equal0~2_combout $end
+$var wire 1 V! freq_Devider|Equal0~3_combout $end
+$var wire 1 W! freq_Devider|Equal0~4_combout $end
+$var wire 1 X! freq_Devider|Equal0~6_combout $end
+$var wire 1 Y! freq_Devider|Equal1~0_combout $end
+$var wire 1 Z! freq_Devider|Equal1~1_combout $end
+$var wire 1 [! freq_Devider|Equal1~2_combout $end
+$var wire 1 \! freq_Devider|clkOut~0_combout $end
+$var wire 1 ]! freq_Devider|clkOut~feeder_combout $end
+$var wire 1 ^! freq_Devider|clkOut~q $end
+$var wire 1 _! freq_Devider|clkOut~clkctrl_outclk $end
+$var wire 1 `! CounterUpDown|Mux3~0_combout $end
+$var wire 1 a! CounterUpDown|s_cntValue[2]~0_combout $end
+$var wire 1 b! CounterUpDown|Mux4~0_combout $end
+$var wire 1 c! CounterUpDown|Mux1~0_combout $end
+$var wire 1 d! CounterUpDown|Mux0~0_combout $end
+$var wire 1 e! CounterUpDown|Mux0~1_combout $end
+$var wire 1 f! CounterUpDown|count~q $end
+$var wire 1 g! freq_Devider|s_counter [30] $end
+$var wire 1 h! freq_Devider|s_counter [29] $end
+$var wire 1 i! freq_Devider|s_counter [28] $end
+$var wire 1 j! freq_Devider|s_counter [27] $end
+$var wire 1 k! freq_Devider|s_counter [26] $end
+$var wire 1 l! freq_Devider|s_counter [25] $end
+$var wire 1 m! freq_Devider|s_counter [24] $end
+$var wire 1 n! freq_Devider|s_counter [23] $end
+$var wire 1 o! freq_Devider|s_counter [22] $end
+$var wire 1 p! freq_Devider|s_counter [21] $end
+$var wire 1 q! freq_Devider|s_counter [20] $end
+$var wire 1 r! freq_Devider|s_counter [19] $end
+$var wire 1 s! freq_Devider|s_counter [18] $end
+$var wire 1 t! freq_Devider|s_counter [17] $end
+$var wire 1 u! freq_Devider|s_counter [16] $end
+$var wire 1 v! freq_Devider|s_counter [15] $end
+$var wire 1 w! freq_Devider|s_counter [14] $end
+$var wire 1 x! freq_Devider|s_counter [13] $end
+$var wire 1 y! freq_Devider|s_counter [12] $end
+$var wire 1 z! freq_Devider|s_counter [11] $end
+$var wire 1 {! freq_Devider|s_counter [10] $end
+$var wire 1 |! freq_Devider|s_counter [9] $end
+$var wire 1 }! freq_Devider|s_counter [8] $end
+$var wire 1 ~! freq_Devider|s_counter [7] $end
+$var wire 1 !" freq_Devider|s_counter [6] $end
+$var wire 1 "" freq_Devider|s_counter [5] $end
+$var wire 1 #" freq_Devider|s_counter [4] $end
+$var wire 1 $" freq_Devider|s_counter [3] $end
+$var wire 1 %" freq_Devider|s_counter [2] $end
+$var wire 1 &" freq_Devider|s_counter [1] $end
+$var wire 1 '" freq_Devider|s_counter [0] $end
+$var wire 1 (" CounterUpDown|s_cntValue [3] $end
+$var wire 1 )" CounterUpDown|s_cntValue [2] $end
+$var wire 1 *" CounterUpDown|s_cntValue [1] $end
+$var wire 1 +" CounterUpDown|s_cntValue [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0*
+1)
+0(
+0'
+0&
+0%
+1$
+0#
+0<
+1;
+1:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+1+
+x=
+0>
+1?
+x@
+1A
+1B
+1C
+0D
+0E
+0F
+0G
+0H
+1I
+1J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+1Y
+0Z
+1[
+0\
+0]
+0^
+0_
+1`
+0a
+0b
+0c
+1d
+0e
+0f
+1g
+0h
+0i
+0j
+1k
+0l
+0m
+0n
+0o
+1p
+0q
+0r
+0s
+0t
+1u
+0v
+0w
+0x
+1y
+0z
+0{
+0|
+1}
+0~
+0!!
+0"!
+0#!
+0$!
+1%!
+0&!
+0'!
+0(!
+0)!
+0*!
+1+!
+0,!
+0-!
+0.!
+0/!
+00!
+11!
+02!
+03!
+04!
+05!
+16!
+07!
+08!
+09!
+0:!
+0;!
+1<!
+0=!
+0>!
+0?!
+1@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+1I!
+0J!
+0K!
+0L!
+0M!
+1N!
+0O!
+0P!
+0Q!
+1R!
+0S!
+1T!
+0U!
+1V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+1b!
+0c!
+1d!
+1e!
+0f!
+0'"
+0&"
+0%"
+0$"
+0#"
+0""
+0!"
+0~!
+0}!
+0|!
+0{!
+0z!
+0y!
+0x!
+0w!
+0v!
+0u!
+0t!
+0s!
+0r!
+0q!
+0p!
+0o!
+0n!
+0m!
+0l!
+0k!
+0j!
+0i!
+0h!
+0g!
+0+"
+0*"
+0)"
+0("
+$end
+#50000
+1!
+1b
+1c
+0=
+1'"
+1e
+0d
+1f
+#100000
+0!
+0b
+0c
+1=
+#150000
+1!
+1b
+1c
+0=
+1&"
+0'"
+0g
+0f
+0e
+1d
+1h
+1g
+1f
+0h
+#200000
+0!
+0b
+0c
+1=
+#250000
+1!
+1b
+1c
+0=
+1'"
+1e
+0d
+0g
+0f
+1h
+#300000
+0!
+0b
+0c
+1=
+#350000
+1!
+1b
+1c
+0=
+1%"
+0&"
+0'"
+1i
+0h
+1g
+1f
+0e
+1d
+1j
+0i
+1h
+0f
+0j
+#400000
+0!
+0b
+0c
+1=
+#450000
+1!
+1b
+1c
+0=
+1'"
+1e
+0d
+1f
+#500000
+0!
+0b
+0c
+1=
+#550000
+1!
+1b
+1c
+0=
+1&"
+0'"
+0g
+0f
+0e
+1d
+1i
+0h
+1g
+1f
+1j
+0i
+1h
+0j
+#600000
+0!
+0b
+0c
+1=
+#650000
+1!
+1b
+1c
+0=
+1'"
+1e
+0d
+0g
+0f
+1i
+0h
+1j
+#700000
+0!
+0b
+0c
+1=
+#750000
+1!
+1b
+1c
+0=
+1$"
+0%"
+0&"
+0'"
+0k
+0j
+0i
+1h
+1g
+1f
+0e
+1d
+1l
+1k
+1j
+0h
+0f
+0l
+#800000
+0!
+0b
+0c
+1=
+#850000
+1!
+1b
+1c
+0=
+1'"
+1e
+0d
+1f
+#900000
+0!
+0b
+0c
+1=
+#950000
+1!
+1b
+1c
+0=
+1&"
+0'"
+0g
+0f
+0e
+1d
+1h
+1g
+1f
+0h
+#1000000

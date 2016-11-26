@@ -1,0 +1,185 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MiniProjectoSemaforos_Demo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/BinUpCntRst4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinUpCntRst4
+# -- Compiling architecture RTL of BinUpCntRst4
+# ** Warning: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/BinUpCntRst4.vhd(22): (vcom-1186) Array type case expression must be of a locally static subtype.
+# 
+# vcom -93 -work work {C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/FreqDivider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FreqDivider
+# -- Compiling architecture Behavioral of FreqDivider
+# vcom -93 -work work {C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Semaforos_Demo
+# -- Compiling architecture RTL of Semaforos_Demo
+# ** Error: (vcom-11) Could not find work.debounceunit.
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(26): (vcom-1195) Cannot find expanded name "work.DebounceUnit".
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(26): Unknown expanded name.
+# -- Loading entity FreqDivider
+# -- Loading entity BinUpCntRst4
+# ** Error: (vcom-11) Could not find work.itermitente.
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(52): (vcom-1195) Cannot find expanded name "work.Itermitente".
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(52): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.semaforos.
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(59): (vcom-1195) Cannot find expanded name "work.Semaforos".
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(59): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.rom_4x27.
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(82): (vcom-1195) Cannot find expanded name "work.ROM_4X27".
+# 
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(82): Unknown expanded name.
+# ** Error: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd(88): VHDL Compiler exiting
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./MiniProjectoSemaforos_Demo_run_msim_rtl_vhdl.do line 10
+# C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd}"
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/BinUpCntRst4.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinUpCntRst4
+# -- Compiling architecture RTL of BinUpCntRst4
+# ** Warning: C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/BinUpCntRst4.vhd(22): (vcom-1186) Array type case expression must be of a locally static subtype.
+# 
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/DebounceUnit.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DebounceUnit
+# -- Compiling architecture RTL of DebounceUnit
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/FreqDivider.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FreqDivider
+# -- Compiling architecture Behavioral of FreqDivider
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Itermitente.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Itermitente
+# -- Compiling architecture Behavioral of Itermitente
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/ROM_4X27.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ROM_4X27
+# -- Compiling architecture RTL of ROM_4X27
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Semaforos
+# -- Compiling architecture Behavioral of Semaforos
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Semaforos_Demo
+# -- Compiling architecture RTL of Semaforos_Demo
+# -- Loading entity DebounceUnit
+# -- Loading entity FreqDivider
+# -- Loading entity BinUpCntRst4
+# -- Loading entity Itermitente
+# -- Loading entity Semaforos
+# -- Loading entity ROM_4X27
+vcom -reportprogress 300 -work work C:/Users/RafaelAlmeida/Desktop/Mini-Projeto/Semaforos_Demo_TestBench.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Semaforos_Demo_TestBench
+# -- Compiling architecture Stimulus of Semaforos_Demo_TestBench
+# -- Loading entity BinUpCntRst4
+# -- Loading entity Itermitente
+# -- Loading entity Semaforos
+# -- Loading entity ROM_4X27
+vsim work.semaforos_demo_testbench(stimulus)
+# vsim work.semaforos_demo_testbench(stimulus) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.semaforos_demo_testbench(stimulus)
+# Loading work.binupcntrst4(rtl)
+# Loading work.itermitente(behavioral)
+# Loading work.semaforos(behavioral)
+# Loading work.rom_4x27(rtl)
+add wave -position end  sim:/semaforos_demo_testbench/s_clk
+add wave -position end  sim:/semaforos_demo_testbench/s_reset
+add wave -position end  sim:/semaforos_demo_testbench/s_enable
+add wave -position end  sim:/semaforos_demo_testbench/s_Dveiculo
+add wave -position end  sim:/semaforos_demo_testbench/s_ButtonP1
+add wave -position end  sim:/semaforos_demo_testbench/s_ButtonP2
+add wave -position end  sim:/semaforos_demo_testbench/s_saidas
+add wave -position end  sim:/semaforos_demo_testbench/s_adress
+add wave -position end  sim:/semaforos_demo_testbench/s_SP1Out
+add wave -position end  sim:/semaforos_demo_testbench/s_SP2Out
+add wave -position end  sim:/semaforos_demo_testbench/s_dispalysHex
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /semaforos_demo_testbench/uutROM
+run
+run
+add wave -position end  sim:/semaforos_demo_testbench/s_clk
+add wave -position end  sim:/semaforos_demo_testbench/s_reset
+add wave -position end  sim:/semaforos_demo_testbench/s_enable
+add wave -position end  sim:/semaforos_demo_testbench/s_Dveiculo
+add wave -position end  sim:/semaforos_demo_testbench/s_ButtonP1
+add wave -position end  sim:/semaforos_demo_testbench/s_ButtonP2
+add wave -position end  sim:/semaforos_demo_testbench/s_saidas
+add wave -position end  sim:/semaforos_demo_testbench/s_adress
+add wave -position end  sim:/semaforos_demo_testbench/s_SP1Out
+add wave -position end  sim:/semaforos_demo_testbench/s_SP2Out
+add wave -position end  sim:/semaforos_demo_testbench/s_dispalysHex
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists

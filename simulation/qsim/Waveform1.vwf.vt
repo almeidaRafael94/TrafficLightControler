@@ -1,0 +1,307 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/16/2014 14:26:22"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    BinUDCntEnRst4
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module BinUDCntEnRst4_vlg_sample_tst(
+	clk,
+	enable,
+	reset,
+	upDown_n,
+	sampler_tx
+);
+input  clk;
+input  enable;
+input  reset;
+input  upDown_n;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or enable or reset or upDown_n)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module BinUDCntEnRst4_vlg_check_tst (
+	cntOut,
+	count,
+	sampler_rx
+);
+input [3:0] cntOut;
+input  count;
+input sampler_rx;
+
+reg [3:0] cntOut_expected;
+reg  count_expected;
+
+reg [3:0] cntOut_prev;
+reg  count_prev;
+
+reg [3:0] cntOut_expected_prev;
+reg  count_expected_prev;
+
+reg [3:0] last_cntOut_exp;
+reg  last_count_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	cntOut_prev = cntOut;
+	count_prev = count;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	cntOut_expected_prev = cntOut_expected;
+	count_expected_prev = count_expected;
+end
+
+
+// expected cntOut[ 3 ]
+initial
+begin
+	cntOut_expected[3] = 1'bX;
+	cntOut_expected[3] = #999000 1'b0;
+end 
+// expected cntOut[ 2 ]
+initial
+begin
+	cntOut_expected[2] = 1'bX;
+	cntOut_expected[2] = #999000 1'b0;
+end 
+// expected cntOut[ 1 ]
+initial
+begin
+	cntOut_expected[1] = 1'bX;
+	cntOut_expected[1] = #999000 1'b0;
+end 
+// expected cntOut[ 0 ]
+initial
+begin
+	cntOut_expected[0] = 1'bX;
+	cntOut_expected[0] = #999000 1'b0;
+end 
+
+// expected count
+initial
+begin
+	count_expected = 1'bX;
+	count_expected = #999000 1'b0;
+end 
+// generate trigger
+always @(cntOut_expected or cntOut or count_expected or count)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected cntOut = %b | expected count = %b | ",cntOut_expected_prev,count_expected_prev);
+	$display("| real cntOut = %b | real count = %b | ",cntOut_prev,count_prev);
+`endif
+	if (
+		( cntOut_expected_prev[0] !== 1'bx ) && ( cntOut_prev[0] !== cntOut_expected_prev[0] )
+		&& ((cntOut_expected_prev[0] !== last_cntOut_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cntOut[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cntOut_expected_prev);
+		$display ("     Real value = %b", cntOut_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cntOut_exp[0] = cntOut_expected_prev[0];
+	end
+	if (
+		( cntOut_expected_prev[1] !== 1'bx ) && ( cntOut_prev[1] !== cntOut_expected_prev[1] )
+		&& ((cntOut_expected_prev[1] !== last_cntOut_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cntOut[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cntOut_expected_prev);
+		$display ("     Real value = %b", cntOut_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cntOut_exp[1] = cntOut_expected_prev[1];
+	end
+	if (
+		( cntOut_expected_prev[2] !== 1'bx ) && ( cntOut_prev[2] !== cntOut_expected_prev[2] )
+		&& ((cntOut_expected_prev[2] !== last_cntOut_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cntOut[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cntOut_expected_prev);
+		$display ("     Real value = %b", cntOut_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cntOut_exp[2] = cntOut_expected_prev[2];
+	end
+	if (
+		( cntOut_expected_prev[3] !== 1'bx ) && ( cntOut_prev[3] !== cntOut_expected_prev[3] )
+		&& ((cntOut_expected_prev[3] !== last_cntOut_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cntOut[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cntOut_expected_prev);
+		$display ("     Real value = %b", cntOut_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cntOut_exp[3] = cntOut_expected_prev[3];
+	end
+	if (
+		( count_expected_prev !== 1'bx ) && ( count_prev !== count_expected_prev )
+		&& ((count_expected_prev !== last_count_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port count :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", count_expected_prev);
+		$display ("     Real value = %b", count_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_count_exp = count_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#3000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module BinUDCntEnRst4_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg enable;
+reg reset;
+reg upDown_n;
+// wires                                               
+wire [3:0] cntOut;
+wire count;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+BinUDCntEnRst4 i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.cntOut(cntOut),
+	.count(count),
+	.enable(enable),
+	.reset(reset),
+	.upDown_n(upDown_n)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #50000 1'b1;
+	#50000;
+end 
+
+// enable
+initial
+begin
+	enable = 1'b1;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b0;
+end 
+
+// upDown_n
+initial
+begin
+	upDown_n = 1'b1;
+end 
+
+BinUDCntEnRst4_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.enable(enable),
+	.reset(reset),
+	.upDown_n(upDown_n),
+	.sampler_tx(sampler)
+);
+
+BinUDCntEnRst4_vlg_check_tst tb_out(
+	.cntOut(cntOut),
+	.count(count),
+	.sampler_rx(sampler)
+);
+endmodule
+

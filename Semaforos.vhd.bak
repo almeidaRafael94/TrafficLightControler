@@ -1,0 +1,55 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Semaforos is
+	port (reset      : in std_logic;
+			clk        : in std_logic;
+			Dveiculo   : in std_logic;
+			ButtonP1   : in std_logic;
+			ButtonP2   : in std_logic;
+			SemaforoP1 : out std_logic_vector(1 downto 0);
+			SemaforoP2 : out std_logic_vector(1 downto 0);
+			SemaforoI1 : out std_logic_vector;
+			SemaforoI2 : out std_logic_vector;
+			SemaforoV1 : out std_logic_vector(2 downto 0);
+			SemaforoV2 : out std_logic_vector(2 downto 0));
+end Semaforos;
+
+architecture Behavioral of Semaforos
+type state is (S0,S1,S2,S3);
+signal PS,NS : state;
+
+begin
+	state_register : process(clk,reset)
+	begin
+		if(rising_edge(clk)) then 
+			if(reset = '1') then
+				NS <= S0;
+			else
+				PS <= NS;
+			end if;
+		end if;
+	end process;
+ 
+   next_state : process(PS, Dveiculo, ButtonP1, ButtonP2) 
+	begin
+		NS <= PS;
+		
+		case PS is
+			when S0 => 
+			
+			when S1 =>
+			
+			when S2 =>
+			
+			when S3 =>
+		  
+		   when others => 
+		end case;	
+			
+			
+			
+		
+	
+
